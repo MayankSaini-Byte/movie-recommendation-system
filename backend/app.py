@@ -7,13 +7,13 @@ import os
 app = FastAPI(title="Movie Recommendation API")
 
 # Setup CORS to allow frontend connections
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"], # Allow all origins for local dev
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["*"], # Allow all origins for local dev
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 # Load data at startup
 try:
